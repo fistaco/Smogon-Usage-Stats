@@ -547,7 +547,7 @@ def LogReader(filename,tier,movesets,ratings):
 				move = line[7+5*spacelog+len(found):string.find(line,"|",7+5*spacelog+len(found))-1*spacelog]
 				if move in ["Roar","Whirlwind","Circle Throw","Dragon Tail"]:
 					roar = True
-				elif move in ["U-Turn","U-turn","Volt Switch","Baton Pass"]:
+				elif move in ["U-Turn","U-turn","Volt Switch","Baton Pass","Parting Shot"]:
 					uturn = True
 
 			elif linetype == "-enditem": #check for Red Card, Eject Button
